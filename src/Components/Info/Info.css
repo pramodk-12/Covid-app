@@ -1,0 +1,55 @@
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.infodiv {
+    height: inherit;
+    overflow: auto;
+    /* padding-left: 20px; */
+}
+
+.statsdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.infostat-box {
+    position: relative;
+    height: 75px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.infostat-box:last-child {
+    margin-right: 0;
+}
+
+.info-type {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 18px;
+    top: -14px;
+    left: 10px;
+    padding: 0 5px;
+}
+
+.info-data{
+    font-size: 16px;
+}
+
+canvas{
+
+    width:1000px !important;
+    height:600px  !important;
+  
+  }

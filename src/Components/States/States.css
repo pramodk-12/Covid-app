@@ -1,0 +1,8 @@
+
+.statesdiv {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-left: 20px;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useContext } from "react";
 import './App.css';
+import {Redirect, Route,Switch} from "react-router-dom";
+import Covid from "./Pages/Covid"
+import {StateContext} from "./Components/Context/Contextprovider";
+import Loading from "./Components/Loading/Loading"
 
 function App() {
+  const context = useContext(StateContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home" >
+      {context.loading ? <Loading /> : 
+      <Switch>
+          <Route exact path="/">
+            <Redirect to="/covid-app" />
+          </Route>
+          <Route path="/covid-app">
+            <Covid />
+          </Route>
+      </Switch> }
     </div>
   );
 }

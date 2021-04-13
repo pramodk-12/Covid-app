@@ -1,0 +1,27 @@
+.custom-date {
+    border: 1px solid black!important;
+    width: 210px!important;
+}
+
+.MuiFormControl-marginNormal{
+    margin: 5px 10px 5px!important;
+}
+
+.MuiInputBase-input {
+    padding: 5px 10px!important;
+}
+
+.MuiInput-underline:before {
+    border: none!important;
+}
+
+.datediv {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+
+/* transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    border-bottom: 2px solid #3f51b5; */
